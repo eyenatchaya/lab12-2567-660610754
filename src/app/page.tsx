@@ -55,12 +55,12 @@ export default function Home() {
   const [theme, setTheme] = useState(THEMES.LIGHT);
   const [lang, setLang] = useState(LANGS.EN);
 
-  const setLightTheme = () => setTheme(THEMES.LIGHT);
-  const setDarkTheme = () => setTheme(THEMES.DARK);
+  const setLightTheme = () => {setTheme(THEMES.LIGHT);};
+  const setDarkTheme = () => {setTheme(THEMES.DARK);};
   const toggleTheme = () =>
     setTheme(theme.name === "dark" ? THEMES.LIGHT : THEMES.DARK);
 
-  const toggleLang = () => setLang(lang.name === "en" ? LANGS.TH : LANGS.EN);
+  const toggleLang = () => {setLang(lang.name === "en" ? LANGS.TH : LANGS.EN);};
 
   return (
     <div
@@ -78,7 +78,7 @@ export default function Home() {
           <Controller />
         </LangContext.Provider>
       </ThemeContext.Provider>
-      <Footer year="2023" fullName="Chayanin Suatap" studentId="660610999" />
+      <Footer year="2024" fullName="Natchaya Palee" studentId="660610754" />
     </div>
   );
 }
